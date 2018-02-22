@@ -1,0 +1,6 @@
+<ul *ngFor="let l of entriesList">
+  <li>
+    <h1>{{l.title}}-- {{l.date}}</h1> 
+  </li>
+  <a [routerLink]="['entry', l._id]">Boton del averno </a>
+</ul>
